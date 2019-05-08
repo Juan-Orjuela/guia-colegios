@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>La guía de colegios</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner-intro">
+            <img srcset="img/logo-guia.png, img/logo-guia@2x.png 2x" src="img/logo-guia@2x.png"
+                alt="La Guía de Colegios - Semana Educación">
+        </div>
+        <div class="txt-intro">
+            Grupo Semana tiene el gusto de presentar la Guía de Colegios Semana Educación, una plataforma que le permite
+            encontrar información relevante que usted puede tener presente al momento de escoger el colegio de sus
+            hijos; esta plataforma se realiza con base en una selección de las primeras 200 instituciones del especial
+            “Los Mejores Colegios” de la revista Dinero, información sustentada en los resultados de las pruebas Saber
+            11 del año 2018 presentados por el Icfes. <a
+                href="https://www.dinero.com/edicion-impresa/caratula/multimedia/ranking-de-los-mejores-colegios-de-colombia-en-2018/264708"
+                target="_blank">Ver ranking </a></div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row"></div>
+            <div class="row">
+                <div id="conteo" class="col-12">
+                    <p>Mostrando <span id="num-resultados">200</span> colegios</p>
+                </div>
+                <div id="col-filtros" class="col-4">
+                    <div id="filtros">
+                        <h3>Fíltralos por:</h3>
+                        <!--<div id="tags-wrapper">
+                            <span>Equitación</span><span>Calendario A</span>
+                        </div>-->
+                        <form>
+                            <!--Ciudad-->
+                            <div class="form-group">
+                                <label for="ciudad">Ciudad</label>
+                                <select id="ciudad" class="custom-select">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Bogotá D.C</option>
+                                    <option value="2">Medellín</option>
+                                    <option value="3">Cali</option>
+                                </select>
+                            </div>
+                            <!--Calendario-->
+                            <div class="form-group">
+                                <label for="calendario">Calendario</label>
+                                <select id="calendario" class="custom-select">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Calendario A</option>
+                                    <option value="2">Calendario B</option>
+                                </select>
+                            </div>
+                            <!--Idiomas-->
+                            <div class="form-group">
+                                <span class="form-label">Idiomas</span>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="espanol">
+                                            <label class="custom-control-label" for="espanol">Español</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="ingles">
+                                            <label class="custom-control-label" for="ingles">Inglés</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="frances">
+                                            <label class="custom-control-label" for="frances">Francés</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="aleman">
+                                            <label class="custom-control-label" for="aleman">Alemán</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--Tipo / Género-->
+                            <div class="form-group">
+                                <span class="form-label">Tipo</span>
+                                <div class="form-row">
+
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="femenino">
+                                            <label class="custom-control-label" for="femenino">Femenino</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="masculino">
+                                            <label class="custom-control-label" for="masculino">Masculino</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="mixto">
+                                            <label class="custom-control-label" for="mixto">Mixto</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Modalidad-->
+                            <div class="form-group">
+                                <span class="form-label">Modalidad</span>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="presencial">
+                                    <label class="custom-control-label" for="presencial">Presencial</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="virtual">
+                                    <label class="custom-control-label" for="virtual">Virtual</label>
+                                </div>
+                            </div>
+                            <!--Valor-->
+                            <div class="form-group">
+                                <span class="form-label">Valor mensual aproximado</span>
+                                ...
+                            </div>
+                            <!--Programas extracurriculares-->
+                            <div class="form-group">
+                                <span class="form-label">Programas extracurriculares</span>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="artes">
+                                            <label class="custom-control-label" for="artes">Artes Visuales</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="musica">
+                                            <label class="custom-control-label" for="musica">Música</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="teatro">
+                                            <label class="custom-control-label" for="teatro">Teatro</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="danza">
+                                            <label class="custom-control-label" for="danza">Danza</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="pintura">
+                                            <label class="custom-control-label" for="pintura">Pintura</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tenis">
+                                            <label class="custom-control-label" for="tenis">Tenis</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="equitacion">
+                                            <label class="custom-control-label" for="equitacion">Equitación</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="natacion">
+                                            <label class="custom-control-label" for="natacion">Natación</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="robotica">
+                                            <label class="custom-control-label" for="robotica">Robótica</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="porras">
+                                            <label class="custom-control-label" for="porras">Porras</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <button id="limpiar-filtros" type="button" class="btn">Limpiar filtros</button>
+                    </div>
+                    <div id="pauta"></div>
+                </div>
+                <div id="col-resultados" class="col-8">
+                    <div id="ordenar" class="row">
+                        <div class="col-sm-6">
+                            <h3>Ordénalos por:</h3>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <select id="ordenar-select" class="custom-select">
+                                    <option selected>Posición en el ranking</option>
+                                    <option value="1">Valor,menos a mayor</option>
+                                    <option value="2">Valor, mayor a menor</option>
+                                    <option value="3">Alfabético</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="resultados" >
+                        <div class="resultado">
+                            <a class="enlace" href="#" target="_blank">
+                                <div class="info-wp">
+                                    <h2 class="info-tit">Colegio nuevo título de ejemplo</h2>
+                                    <ul class="detalles info-cont">
+                                        <li class="ubi-li"><strong>Ubicación: </strong><span class="ciudad-info">Bogotá
+                                                D.C</span> - <span class="sector-info">Usaquén</span></li>
+                                        <li class="mod-li"><strong>Modalidad: </strong><span
+                                                class="modalidad-info">Presencial</span></li>
+                                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                                Inglés</span></li>
+                                        <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
+                                        </li>
+                                        <li class="cal-li"><strong>Calendario: </strong><span
+                                                class="calendario-info">A</span></li>
+                                        <li class="val-li"><strong>Valor mensual aprox: </strong><span
+                                                class="valor-info">$650.000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="img-wp">
+                                    <img src="img/colegios/logo-prueba.jpg" alt="Logo Colegio">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
