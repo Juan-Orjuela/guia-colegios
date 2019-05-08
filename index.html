@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/estilos.css">
     <title>La guía de colegios</title>
 </head>
@@ -186,7 +188,41 @@
                         </form>
                         <button id="limpiar-filtros" type="button" class="btn">Limpiar filtros</button>
                     </div>
-                    <div id="pauta"></div>
+                    <!--Pauta-->
+                    <div id="pauta">
+                        <div class="pauta-carrusel">
+                            <div class="pauta">
+                                <img src="img/prueba-pauta.jpg" alt="Pauta">
+                                <h2>Título de pauta</h2>
+                                <div class="desc">
+                                    <p>Praesent tincidunt libero quis nibh pellentesque vehicula. Pellentesque commodo,
+                                        arcu eu rutrum tempus, tortor libero sollicitudin arcu, nec molestie eros metus
+                                        nec purus. Maecenas mi sem, blandit sed mi id.</p>
+                                </div>
+                                <a href="#" target="_blank">VER MÁS</a>
+                            </div>
+                            <div class="pauta">
+                                <img src="img/prueba-pauta.jpg" alt="Pauta">
+                                <h2>Título de pauta</h2>
+                                <div class="desc">
+                                    <p>Praesent tincidunt libero quis nibh pellentesque vehicula. Pellentesque commodo,
+                                        arcu eu rutrum tempus, tortor libero sollicitudin arcu, nec molestie eros metus
+                                        nec purus. Maecenas mi sem, blandit sed mi id.</p>
+                                </div>
+                                <a href="#" target="_blank">VER MÁS</a>
+                            </div>
+                            <div class="pauta">
+                                <img src="img/prueba-pauta.jpg" alt="Pauta">
+                                <h2>Título de pauta</h2>
+                                <div class="desc">
+                                    <p>Praesent tincidunt libero quis nibh pellentesque vehicula. Pellentesque commodo,
+                                        arcu eu rutrum tempus, tortor libero sollicitudin arcu, nec molestie eros metus
+                                        nec purus. Maecenas mi sem, blandit sed mi id.</p>
+                                </div>
+                                <a href="#" target="_blank">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="col-resultados" class="col-8">
                     <div id="ordenar" class="row">
@@ -205,7 +241,183 @@
 
                         </div>
                     </div>
-                    <div id="resultados" >
+                    <div id="resultados">
+                        <!--Resultado-->
+                        <div class="resultado">
+                            <a class="enlace" href="#" target="_blank">
+                                <div class="info-wp">
+                                    <h2 class="info-tit">Colegio nuevo título de ejemplo</h2>
+                                    <ul class="detalles info-cont">
+                                        <li class="ubi-li"><strong>Ubicación: </strong><span class="ciudad-info">Bogotá
+                                                D.C</span> - <span class="sector-info">Usaquén</span></li>
+                                        <li class="mod-li"><strong>Modalidad: </strong><span
+                                                class="modalidad-info">Presencial</span></li>
+                                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                                Inglés</span></li>
+                                        <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
+                                        </li>
+                                        <li class="cal-li"><strong>Calendario: </strong><span
+                                                class="calendario-info">A</span></li>
+                                        <li class="val-li"><strong>Valor mensual aprox: </strong><span
+                                                class="valor-info">$650.000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="img-wp">
+                                    <img src="img/colegios/logo-prueba.jpg" alt="Logo Colegio">
+                                </div>
+                            </a>
+                        </div>
+                        <!--Resultado-->
+                        <div class="resultado">
+                            <a class="enlace" href="#" target="_blank">
+                                <div class="info-wp">
+                                    <h2 class="info-tit">Colegio nuevo título de ejemplo</h2>
+                                    <ul class="detalles info-cont">
+                                        <li class="ubi-li"><strong>Ubicación: </strong><span class="ciudad-info">Bogotá
+                                                D.C</span> - <span class="sector-info">Usaquén</span></li>
+                                        <li class="mod-li"><strong>Modalidad: </strong><span
+                                                class="modalidad-info">Presencial</span></li>
+                                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                                Inglés</span></li>
+                                        <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
+                                        </li>
+                                        <li class="cal-li"><strong>Calendario: </strong><span
+                                                class="calendario-info">A</span></li>
+                                        <li class="val-li"><strong>Valor mensual aprox: </strong><span
+                                                class="valor-info">$650.000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="img-wp">
+                                    <img src="img/colegios/logo-prueba.jpg" alt="Logo Colegio">
+                                </div>
+                            </a>
+                        </div>
+                        <!--Resultado-->
+                        <div class="resultado">
+                            <a class="enlace" href="#" target="_blank">
+                                <div class="info-wp">
+                                    <h2 class="info-tit">Colegio nuevo título de ejemplo</h2>
+                                    <ul class="detalles info-cont">
+                                        <li class="ubi-li"><strong>Ubicación: </strong><span class="ciudad-info">Bogotá
+                                                D.C</span> - <span class="sector-info">Usaquén</span></li>
+                                        <li class="mod-li"><strong>Modalidad: </strong><span
+                                                class="modalidad-info">Presencial</span></li>
+                                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                                Inglés</span></li>
+                                        <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
+                                        </li>
+                                        <li class="cal-li"><strong>Calendario: </strong><span
+                                                class="calendario-info">A</span></li>
+                                        <li class="val-li"><strong>Valor mensual aprox: </strong><span
+                                                class="valor-info">$650.000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="img-wp">
+                                    <img src="img/colegios/logo-prueba.jpg" alt="Logo Colegio">
+                                </div>
+                            </a>
+                        </div>
+                        <!--Resultado-->
+                        <div class="resultado">
+                            <a class="enlace" href="#" target="_blank">
+                                <div class="info-wp">
+                                    <h2 class="info-tit">Colegio nuevo título de ejemplo</h2>
+                                    <ul class="detalles info-cont">
+                                        <li class="ubi-li"><strong>Ubicación: </strong><span class="ciudad-info">Bogotá
+                                                D.C</span> - <span class="sector-info">Usaquén</span></li>
+                                        <li class="mod-li"><strong>Modalidad: </strong><span
+                                                class="modalidad-info">Presencial</span></li>
+                                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                                Inglés</span></li>
+                                        <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
+                                        </li>
+                                        <li class="cal-li"><strong>Calendario: </strong><span
+                                                class="calendario-info">A</span></li>
+                                        <li class="val-li"><strong>Valor mensual aprox: </strong><span
+                                                class="valor-info">$650.000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="img-wp">
+                                    <img src="img/colegios/logo-prueba.jpg" alt="Logo Colegio">
+                                </div>
+                            </a>
+                        </div>
+                        <!--Resultado-->
+                        <div class="resultado">
+                            <a class="enlace" href="#" target="_blank">
+                                <div class="info-wp">
+                                    <h2 class="info-tit">Colegio nuevo título de ejemplo</h2>
+                                    <ul class="detalles info-cont">
+                                        <li class="ubi-li"><strong>Ubicación: </strong><span class="ciudad-info">Bogotá
+                                                D.C</span> - <span class="sector-info">Usaquén</span></li>
+                                        <li class="mod-li"><strong>Modalidad: </strong><span
+                                                class="modalidad-info">Presencial</span></li>
+                                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                                Inglés</span></li>
+                                        <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
+                                        </li>
+                                        <li class="cal-li"><strong>Calendario: </strong><span
+                                                class="calendario-info">A</span></li>
+                                        <li class="val-li"><strong>Valor mensual aprox: </strong><span
+                                                class="valor-info">$650.000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="img-wp">
+                                    <img src="img/colegios/logo-prueba.jpg" alt="Logo Colegio">
+                                </div>
+                            </a>
+                        </div>
+                        <!--Resultado-->
+                        <div class="resultado">
+                            <a class="enlace" href="#" target="_blank">
+                                <div class="info-wp">
+                                    <h2 class="info-tit">Colegio nuevo título de ejemplo</h2>
+                                    <ul class="detalles info-cont">
+                                        <li class="ubi-li"><strong>Ubicación: </strong><span class="ciudad-info">Bogotá
+                                                D.C</span> - <span class="sector-info">Usaquén</span></li>
+                                        <li class="mod-li"><strong>Modalidad: </strong><span
+                                                class="modalidad-info">Presencial</span></li>
+                                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                                Inglés</span></li>
+                                        <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
+                                        </li>
+                                        <li class="cal-li"><strong>Calendario: </strong><span
+                                                class="calendario-info">A</span></li>
+                                        <li class="val-li"><strong>Valor mensual aprox: </strong><span
+                                                class="valor-info">$650.000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="img-wp">
+                                    <img src="img/colegios/logo-prueba.jpg" alt="Logo Colegio">
+                                </div>
+                            </a>
+                        </div>
+                        <!--Resultado-->
+                        <div class="resultado">
+                            <a class="enlace" href="#" target="_blank">
+                                <div class="info-wp">
+                                    <h2 class="info-tit">Colegio nuevo título de ejemplo</h2>
+                                    <ul class="detalles info-cont">
+                                        <li class="ubi-li"><strong>Ubicación: </strong><span class="ciudad-info">Bogotá
+                                                D.C</span> - <span class="sector-info">Usaquén</span></li>
+                                        <li class="mod-li"><strong>Modalidad: </strong><span
+                                                class="modalidad-info">Presencial</span></li>
+                                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                                Inglés</span></li>
+                                        <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
+                                        </li>
+                                        <li class="cal-li"><strong>Calendario: </strong><span
+                                                class="calendario-info">A</span></li>
+                                        <li class="val-li"><strong>Valor mensual aprox: </strong><span
+                                                class="valor-info">$650.000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="img-wp">
+                                    <img src="img/colegios/logo-prueba.jpg" alt="Logo Colegio">
+                                </div>
+                            </a>
+                        </div>
+                        <!--Resultado-->
                         <div class="resultado">
                             <a class="enlace" href="#" target="_blank">
                                 <div class="info-wp">
@@ -231,11 +443,33 @@
                             </a>
                         </div>
                     </div>
+                    <div id="paginacion">
+                        <div class="paginacion-items">
+                            <a href="#">&laquo;</a>
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4"><img src="img/logo-guia@2x.png" alt="La Guía de Colegios"> </div>
+                    <div class="col-8"></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">COPYRIGHT 2019 © PUBLICACIONES SEMANA S.A</div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -247,6 +481,19 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.pauta-carrusel').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows: false,
+                speed: 600
+
+            });
+        });
     </script>
 </body>
 

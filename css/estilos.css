@@ -178,6 +178,9 @@ img {
 #resultados {
 	padding: 15px 0;
 }
+.resultado {
+	margin-bottom: 1rem;
+}
 .resultado .enlace {
 	display: flex;
 	color: #666666;
@@ -264,4 +267,111 @@ img {
 .val-li:before {
 	background-image: url('../img/val-ico@2x.png');
 	background-image: url('../img/val-ico.svg');
+}
+/*Pauta*/
+#col-filtros #pauta {
+	margin-top: 30px;
+	padding-bottom: 60px;
+}
+#col-filtros .pauta-carrusel {
+	left: -15px;
+	top: 15px
+}
+.pauta-carrusel .slick-dots{
+	background: #303069;
+	top: -12px;
+	bottom: initial;
+	width: 150px;
+	left: initial;
+	right: 15px;
+}
+.pauta-carrusel .slick-dots li {
+	top: -3px;
+}
+.pauta-carrusel .slick-dots li button:before {
+	color: white;
+	font-size: 11px;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #01cdcd;
+}
+.pauta-carrusel  h2 {
+	background: #01cdcd;
+	color: #303069;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 12px;
+	margin-top: 8px;
+
+}
+.pauta-carrusel .desc {
+	padding: 15px 0 45px 30px;
+	min-height: 150px;
+	border-bottom: 4px solid #303069;
+	margin-bottom: 0;
+}
+.pauta-carrusel a {
+	background: #303069;
+	color: #ffffff;
+	font-weight: 700;
+	padding: 4px 12px;
+	float: right;
+	text-decoration: none;
+	transition: all .3s;
+	letter-spacing: 0.03em;
+	margin-top: -18px;
+	border-radius: 4px;
+
+}
+.pauta-carrusel a:hover {
+	color: #01cdcd;
+}
+/*paginacion*/
+#col-resultados {
+	position: relative;
+	padding-bottom: 55px;
+}
+#col-resultados #paginacion {
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #ccc;
+	width: 100%;
+	left: 0;
+	padding: 20px 15px;
+	text-align: center;
+}
+#col-resultados #paginacion a {
+	background: rgba(204, 204, 204, 0.5);
+	width: 40px;
+	display: inline-block;
+	border-radius: 4px;
+	color: #303069;
+	text-decoration: none;
+	transition: all .5s;
+}
+#col-resultados #paginacion a:hover {
+	background: #01cdcd;
+}
+#col-resultados #paginacion a.active {
+	background: #303069;
+	color: #ffffff;
+}
+/*Footer*/
+footer {
+	margin-top: 3rem;
+}
+footer .main-footer {
+	background: #303069;
+	padding-top: 4.3rem;
+	padding-bottom: 4.3rem;
+}
+footer .main-footer .col-4 img {
+	width: 290px;
+}
+footer .copyright {
+	background: #01cdcd;
+	text-align: center;
+	color: white;
+	padding: 4px;
 }
