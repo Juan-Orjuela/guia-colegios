@@ -501,7 +501,7 @@ DETALLE COL
 	margin-top: 3rem;
 }
 /*Info destacada*/
-.info-cont {
+.destacada-wp .info-cont {
 	list-style-type: none;
 	padding: 30px 15px 0;
 	margin: 0;
