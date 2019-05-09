@@ -51,8 +51,21 @@ img {
     max-width: 900px;
     text-align: center;
     margin: 40px auto;
+    font-size: 1.2rem;
 }
+.txt-intro a {
+    color: #303069;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color .3s;
 
+}
+.txt-intro a:hover {
+    color: #01cdcd;
+    text-decoration: none;
+
+}
 /*Casillas*/
 #conteo {
     border: 1px solid #cccccc;
@@ -355,27 +368,20 @@ img {
 }
 
 .pauta-carrusel .desc {
-    padding: 15px 0 45px 30px;
+    padding: 15px 0 20px 30px;
     min-height: 150px;
     border-bottom: 4px solid #303069;
     margin-bottom: 0;
 }
-
 .pauta-carrusel a {
-    background: #303069;
-    color: #ffffff;
-    font-weight: 700;
-    padding: 4px 12px;
-    float: right;
-    text-decoration: none;
-    transition: all .3s;
-    letter-spacing: 0.03em;
-    margin-top: -18px;
-    border-radius: 4px;
+    text-decoration: none
 }
-
-.pauta-carrusel a:hover {
-    color: #01cdcd;
+.pauta-carrusel a h2 {
+    transition: color .3s;
+}
+.pauta-carrusel a:hover h2 {
+    color: white;
+    text-decoration: none;
 }
 
 /*paginacion*/
@@ -521,7 +527,7 @@ DETALLE COL
 }
 
 .carrusel-elem {
-    padding: 0 8px;
+    padding: 0 4px;
 }
 
 .carrusel-col-wp .slick-dots {
@@ -628,7 +634,10 @@ DETALLE COL
 .info-contacto a {
     color: #01cdcd;
 }
-
+.modal-body {
+    padding: 0;
+    background: #303069;
+}
 /*Modal*/
 .modal-backdrop {
     background-color: #303069;
