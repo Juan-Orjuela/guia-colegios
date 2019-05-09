@@ -646,7 +646,30 @@ DETALLE COL
 .modal-backdrop.show {
     opacity: .75;
 }
-
+.ekko-lightbox .modal-content {
+    background-color: transparent;
+    border: none;
+}
+.ekko-lightbox .modal-header {
+    border: none;
+}
+.ekko-lightbox .modal-header .close {
+    width: 48px;
+    height: 48px;
+    background: #BF0911;
+    border-radius: 100px;
+    border: 8px solid #df020a;
+    opacity: 1;
+    color: white;
+    text-shadow: none;
+    font-size: 32px;
+    line-height: 0;
+}
+.ekko-lightbox .modal-header .close span {
+    position: relative;
+    top: -3px;
+    left: -7px;
+}
 @media screen and (min-width: 993px) {
     #row-btn-mobile {
         display: none
