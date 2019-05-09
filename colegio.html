@@ -33,10 +33,15 @@
                     <button type="button" class="btn btn-video" data-toggle="modal" data-target="#videoPop">VER
                         VIDEO</button>
 
-                    <div id="videoPop" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                    <div id="videoPop" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
-                                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/120996252?color=e3461b&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/120996252?color=e3461b&title=0&byline=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                                <script src="https://player.vimeo.com/api/player.js"></script>
                             </div>
                         </div>
                     </div>
@@ -68,19 +73,20 @@
             </div>
             <!--Info Destacada-->
             <div class="row destacada-wp">
-                <div class="col-4 subtit-col">
+                <div class="col-md-4 subtit-col">
                     <h2>Información destacada</h2>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <ul class="detalles info-cont">
-                            <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
-                                    Inglés</span></li>
+                        <li class="idi-li"><strong>Idioma: </strong><span class="idioma-info">Español,
+                                Inglés</span></li>
                         <li class="mod-li"><strong>Modalidad: </strong><span class="modalidad-info">Presencial</span>
                         </li>
                         <li class="cal-li"><strong>Calendario: </strong><span class="calendario-info">A</span></li>
                         <li class="tip-li"><strong>Tipo: </strong><span class="tipo-info">Mixto</span>
                         </li>
-                        <li class="prom-li"><strong>Prom. estudiantes por curso: </strong><span class="prom-info">45</span>
+                        <li class="prom-li"><strong>Prom. estudiantes por curso: </strong><span
+                                class="prom-info">45</span>
                         </li>
                         <li class="val-li"><strong>Valor mensual aprox: </strong><span
                                 class="valor-info">$650.000</span></li>
@@ -89,10 +95,10 @@
             </div>
             <!--Descripción-->
             <div class="row descripcion-wp">
-                <div class="col-4 subtit-col">
+                <div class="col-md-4 subtit-col">
                     <h2>Descripción</h2>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <p>Proin consequat venenatis faucibus. In condimentum sollicitudin leo mollis fermentum. Praesent
                         suscipit venenatis urna, non tristique enim finibus sit amet. Quisque convallis quis nisi at
                         fermentum. Donec et sollicitudin urna, sed molestie ante. Cras vitae arcu in velit vestibulum
@@ -106,10 +112,10 @@
             </div>
             <!--Info contacto-->
             <div class="row contacto-wp">
-                <div class="col-4 subtit-col">
+                <div class="col-md-4 subtit-col">
                     <h2>Información de contacto</h2>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="row info-contacto">
                         <div class="col-sm-6">
                             <h4>Dirección</h4>
@@ -139,8 +145,8 @@
         <div class="main-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-4"><img src="img/logo-guia@2x.png" alt="La Guía de Colegios"> </div>
-                    <div class="col-8"></div>
+                    <div class="col-md-4"><img src="img/logo-guia@2x.png" alt="La Guía de Colegios"> </div>
+                    <div class="col-md-8"></div>
                 </div>
             </div>
         </div>
@@ -166,7 +172,14 @@
                 arrows: false,
                 speed: 600,
                 centerMode: true,
-                centerPadding: '120px'
+                centerPadding: '120px',
+                responsive: [{
+                        breakpoint: 992,
+                        settings: {
+                            centerPadding: '20px',
+                        }
+                    }                    
+                ]
 
             });
         });
