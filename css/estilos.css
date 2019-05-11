@@ -53,19 +53,20 @@ img {
     margin: 40px auto;
     font-size: 1.2rem;
 }
+
 .txt-intro a {
     color: #303069;
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: color .3s;
-
 }
+
 .txt-intro a:hover {
     color: #01cdcd;
     text-decoration: none;
-
 }
+
 /*Casillas*/
 #conteo {
     border: 1px solid #cccccc;
@@ -373,12 +374,15 @@ img {
     border-bottom: 4px solid #303069;
     margin-bottom: 0;
 }
+
 .pauta-carrusel a {
     text-decoration: none
 }
+
 .pauta-carrusel a h2 {
     transition: color .3s;
 }
+
 .pauta-carrusel a:hover h2 {
     color: white;
     text-decoration: none;
@@ -634,10 +638,12 @@ DETALLE COL
 .info-contacto a {
     color: #01cdcd;
 }
+
 .modal-body {
     padding: 0;
     background: #303069;
 }
+
 /*Modal*/
 .modal-backdrop {
     background-color: #303069;
@@ -646,13 +652,16 @@ DETALLE COL
 .modal-backdrop.show {
     opacity: .75;
 }
+
 .ekko-lightbox .modal-content {
     background-color: transparent;
     border: none;
 }
+
 .ekko-lightbox .modal-header {
     border: none;
 }
+
 .ekko-lightbox .modal-header .close {
     width: 48px;
     height: 48px;
@@ -665,15 +674,20 @@ DETALLE COL
     font-size: 32px;
     line-height: 0;
 }
+
 .ekko-lightbox .modal-header .close span {
     position: relative;
     top: -3px;
     left: -7px;
 }
+
 @media screen and (min-width: 993px) {
-    #row-btn-mobile {
+    #row-btn-mobile,
+    #col-filtros #filtros .filtrar-mobile-wp,
+    .cerrar-mobile {
         display: none
     }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -681,9 +695,114 @@ DETALLE COL
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 5;
+        max-width: initial;
+        height: 100%;
+        background: whitesmoke;
+        overflow: auto;
+        border: none;
+
         display: none;
     }
 
+    #col-filtros #filtros {
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    #col-filtros #pauta {
+        display: none;
+    }
+
+    #col-filtros #filtros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #col-filtros #filtros .limpiar-filtros {
+        order: 1;
+        background: transparent;
+        color: #df020a;
+        font-size: 0.875rem;
+        border-bottom: 2px solid #df020a;
+        border-radius: 0;
+        padding: 2px;
+    }
+
+    #col-filtros #filtros form {
+        order: 2;
+        width: 100%;
+        max-width: 480px;
+        align-self: center;
+    }
+
+    #col-filtros #filtros .filtrar-mobile-wp {
+        order: 3;
+        position: fixed;
+        bottom: 0;
+        background: whitesmoke;
+        width: 100%;
+        left: 0;
+        padding: 16px;
+        text-align: center;
+        border-top: 1px solid #ccc;
+    }
+
+    #col-filtros #filtros .filtrar-mobile-wp .filtrar-mobile {
+        background: #01cdcd;
+        color: #303069;
+        font-weight: 900;
+        text-transform: uppercase;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        letter-spacing: 0.03em;
+        margin: 0 auto;
+        display: block;
+        transition: opacity .2s linear;
+        border-radius: 100px;
+        font-size: 1.1rem;
+        padding: 8px 32px;
+        width: 240px;
+        transition: all .5s;
+    }
+
+    #col-filtros #filtros .filtrar-mobile-wp .filtrar-mobile:hover {
+        color: #ffffff;
+    }
+
+    #col-filtros #filtros h3 {
+        display: none
+    }
+
+    .cerrar-mobile {
+        width: 48px;
+        height: 48px;
+        background: #BF0911;
+        border-radius: 100px;
+        border: 8px solid #df020a;
+        opacity: 1;
+        color: white;
+        text-shadow: none;
+        font-size: 32px;
+        line-height: 0;
+        font-weight: 700;
+        align-self: flex-end;
+        transition: all .5s;
+    }
+
+    .cerrar-mobile:hover {
+        color: white;
+        opacity: .7
+    }
+
+    .cerrar-mobile span {
+        position: relative;
+        top: -2px;
+        left: -3px;
+    }
+
+    /*Resultados*/
     #col-resultados {
         flex: 100%;
         max-width: 100%;
