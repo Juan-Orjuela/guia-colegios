@@ -770,7 +770,20 @@ DETALLE COL
     top: -3px;
     left: -7px;
 }
+.form-2-col {
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.form-2-col > div {
+    width: 50%;
+    flex: 50%;
+}
+/*
+=================
+RESPONSIVE
+=================
+*/
 @media screen and (min-width: 993px) {
     #row-btn-mobile, #col-filtros #filtros .filtrar-mobile-wp, .cerrar-mobile {
         display: none

@@ -57,7 +57,6 @@
                                     <option value="3">Bucaramanga</option>
                                     <option value="4">Cali</option>
                                     <option value="5">Medellín</option>
-
                                 </select>
                             </div>
                             <!--Calendario-->
@@ -72,8 +71,7 @@
                             <!--Idiomas-->
                             <div class="form-group">
                                 <span class="form-label">Idiomas</span>
-                                <div class="form-row">
-                                    <div class="col">
+                                <div class="form-2-col">
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="espanol">
                                             <label class="custom-control-label" for="espanol">Español</label>
@@ -82,8 +80,6 @@
                                             <input type="checkbox" class="custom-control-input" id="ingles">
                                             <label class="custom-control-label" for="ingles">Inglés</label>
                                         </div>
-                                    </div>
-                                    <div class="col">
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="frances">
                                             <label class="custom-control-label" for="frances">Francés</label>
@@ -92,46 +88,30 @@
                                             <input type="checkbox" class="custom-control-input" id="aleman">
                                             <label class="custom-control-label" for="aleman">Alemán</label>
                                         </div>
-                                    </div>
                                 </div>
 
 
                             </div>
                             <!--Tipo / Género-->
                             <div class="form-group">
-                                <span class="form-label">Tipo</span>
-                                <div class="form-row">
-
-                                    <div class="col">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="femenino">
-                                            <label class="custom-control-label" for="femenino">Femenino</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="masculino">
-                                            <label class="custom-control-label" for="masculino">Masculino</label>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="mixto">
-                                            <label class="custom-control-label" for="mixto">Mixto</label>
-                                        </div>
-                                    </div>
-
-                                </div>
+                                <label for="tipo">Tipo</label>
+                                <select id="tipo" class="custom-select">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Mixto</option>
+                                    <option value="2">Femenino</option>
+                                    <option value="3">Masculino</option>
+                                </select>
                             </div>
                             <!--Modalidad-->
                             <div class="form-group">
-                                <span class="form-label">Modalidad</span>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="presencial">
-                                    <label class="custom-control-label" for="presencial">Presencial</label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="virtual">
-                                    <label class="custom-control-label" for="virtual">Virtual</label>
-                                </div>
+                                <label for="modalidad">Modalidad</label>
+                                <select id="modalidad" class="custom-select">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Presencial</option>
+                                    <option value="2">Semipresencial</option>
+                                    <option value="3">Mixto</option>
+                                    <option value="4">Presencial-Semipresencial</option>
+                                </select>
                             </div>
                             <!--Valor-->
                             <div class="form-group">
@@ -142,8 +122,8 @@
                             <!--Programas extracurriculares-->
                             <div class="form-group">
                                 <span class="form-label">Programas extracurriculares</span>
-                                <div class="form-row">
-                                    <div class="col">
+                                <div class="form-2-col">
+                                    
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="artes">
                                             <label class="custom-control-label" for="artes">Artes Visuales</label>
@@ -165,8 +145,8 @@
                                             <label class="custom-control-label" for="pintura">Pintura</label>
                                         </div>
 
-                                    </div>
-                                    <div class="col">
+                                    
+                                    
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="tenis">
                                             <label class="custom-control-label" for="tenis">Tenis</label>
@@ -188,7 +168,7 @@
                                             <label class="custom-control-label" for="porras">Porras</label>
                                         </div>
 
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </form>
@@ -322,10 +302,10 @@
                                         </li>
                                         <li class="cal-li"><strong>Calendario: </strong><span
                                                 class="calendario-info">A</span></li>
-                                         <!--Cuando tiene bono-->       
+                                        <!--Cuando tiene bono-->
                                         <li class="val-li"><strong>Valor mensual aprox: </strong><span
                                                 class="valor-info">$650.000</span>
-                                                <br><strong>Pago extra de ingreso: </strong><span
+                                            <br><strong>Pago extra de ingreso: </strong><span
                                                 class="bono-info">$1.650.000</span></li>
                                     </ul>
                                 </div>
@@ -517,13 +497,13 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+    </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/nouislider.min.js"></script>
     <script type="text/javascript" src="js/wNumb.js"></script>
