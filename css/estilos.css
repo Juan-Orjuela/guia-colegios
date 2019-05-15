@@ -1073,14 +1073,21 @@ RESPONSIVE
 }
 /*Esto va a cambiar*/
 .nat-li:before {
-    background-image: url('../img/prom-ico@2x.png');
-    background-image: url('../img/prom-ico.svg');
+    background-image: url('../img/nat-ico@2x.png');
+    background-image: url('../img/nat-ico.svg');
 }
 .jor-li:before {
-    background-image: url('../img/prom-ico@2x.png');
-    background-image: url('../img/prom-ico.svg');
+    background-image: url('../img/jor-ico@2x.png');
+    background-image: url('../img/jor-ico.svg');
 }
 .ext-li:before {
-    background-image: url('../img/prom-ico@2x.png');
-    background-image: url('../img/prom-ico.svg');
+    background-image: url('../img/ext-ico@2x.png');
+    background-image: url('../img/ext-ico.svg');
+}
+img[src*='default'] {
+    width: 120px;
+    margin: 0 auto;
+}
+#col-resultados h3.sin-resultados {
+    color: #cccccc;
 }
